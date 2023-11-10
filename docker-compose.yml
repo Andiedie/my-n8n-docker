@@ -19,6 +19,7 @@ x-shared: &shared
     - QUEUE_BULL_REDIS_PORT=${REDIS_PORT:-6379}
     - QUEUE_BULL_REDIS_PASSWORD=${REDIS_PASSWORD}
     - QUEUE_HEALTH_CHECK_ACTIVE=true
+    - WEBHOOK_URL=${WEBHOOK_URL}
   volumes:
     - n8n_storage:/home/node/.n8n
   networks:
