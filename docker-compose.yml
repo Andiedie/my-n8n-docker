@@ -40,6 +40,9 @@ x-shared: &shared
     # 时区
     - GENERIC_TIMEZONE=Asia/Hong_Kong
 
+    # 允许代码块使用任何内置库
+    - NODE_FUNCTION_ALLOW_BUILTIN=*
+
     # 高级功能
     - N8N_FEAT_ADVANCEDEXECUTIONFILTERS_ENABLE=1
     - N8N_FEAT_APIDISABLED_ENABLE=1
