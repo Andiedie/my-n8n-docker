@@ -43,6 +43,9 @@ x-shared: &shared
     # 允许代码块使用任何内置库
     - NODE_FUNCTION_ALLOW_BUILTIN=*
 
+    # 允许代码块使用外置库列表
+    - NODE_FUNCTION_ALLOW_EXTERNAL=file-type
+
     # 高级功能
     - N8N_FEAT_ADVANCEDEXECUTIONFILTERS_ENABLE=1
     - N8N_FEAT_APIDISABLED_ENABLE=1
